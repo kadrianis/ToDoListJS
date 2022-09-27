@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Ma ToDo liste</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Ma ToDo liste</h1>
+  </header>
+  <main>
+    <form>
+      <input type="text" id="title" placeholder="Titre...">
+      <input list="categories" name="category" id="category" placeholder="Maison">
+      <input type="number" id ="priority" name="priority" min="0" max="2" value="0">
+      <datalist id="categories">
+        <option value="Maison">
+        <option value="Travail">
+        <option value="Loisir">
+      </datalist>
+      <button type="button" name="add">Ajouter</button>
+      <button type="button" name="undel">Retrouver</button>
+
+    </form>
+
+    <ul>
+      <!--<li>
+      <p>Exemple de tâche non démmarée</p><span class="category">Maison</span><span class="priority">0</span><button type="button" name="del">&#x00D7;</button>
+      </li>
+      <li class="active">
+      <p>Exemple de tâche active (en cours)</p><span class="category">Maison</span><span class="priority">0</span><button type="button" name="del">&#x00D7;</button>
+      </li>
+      <li class="done">
+      <p>Exemple de tâche terminée</p><span class="category">Travail</span><span class="priority">2</span><button type="button" name="del">&#x00D7;</button>
+      </li>-->
+    </ul>
+  </main>
+</body>
+<script src="model.js"></script>
+<script src="model_test.js"></script>
+<script src="view.js"></script>
+<script src="controler.js"></script>
+</html>

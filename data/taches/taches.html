@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Des tâches</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    let taches = {
+      titre: "Faire mon rapport  de stage",
+      ['sous-taches']:
+        [
+          { titre: "faire un plan", durée: 2 },
+          { titre: "trouver des informations sur l'entreprise", durée: 3 },
+          { titre: "rediger la description", durée: 5 },
+          { titre: "faire un diagramme de gant", durée: 1 },
+          { titre: "rediger mon travail de stage", durée: 10 },
+          { titre: "rediger la conclusion et relire", durée: 1 },
+        ],
+
+
+      tempsTotal: function () {
+        let total=0;
+        this['sous-taches'].forEach(function (Totemps) {
+          total += Totemps.durée;
+        })
+        return total;
+      },
+    };
+
+
+  </script>
+</body>
+
+</html>
